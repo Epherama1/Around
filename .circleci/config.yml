@@ -9,7 +9,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t Epherama1/around .
+          docker build -t epherama1/around .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-          docker push Epherama1/around
+          docker push epherama1/around
 
